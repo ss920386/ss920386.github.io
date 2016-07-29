@@ -1,0 +1,50 @@
+p {
+    font-weight: normal;
+    font-size: 18px;
+    font-family: Oswald, sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    color: #2A2A2A
+;
+}
+
+#hgreentea {
+    color: #368C43;
+}
+
+#pgreentea {
+    color: #46B356;
+}
+
+#hbluetea {
+    color: #407D9A;
+}
+
+#pbluetea {
+    color: #487FB8;
+}
+
+#hpurpletea {
+    color: #58409A;
+}
+
+#ppurpletea {
+    color: #7C48B8;
+}
+
+#hredtea {
+    color: #A74380;
+}
+
+#predtea {
+    color: #CF4FAB;
+}
