@@ -1,4 +1,7 @@
 p {
+    width: 400px;
+    padding: 25px;
+    margin: 30px;
     font-weight: normal;
     font-size: 18px;
     font-family: Oswald, sans-serif;
@@ -12,9 +15,22 @@ h2 {
 }
 
 h1 {
-    font-size: 32px;
-    color: #2A2A2A
-;
+    font-size: 36px;
+    color: #2A2A2A;
+}
+
+p.block {
+    margin: 15px;
+    background-color: #FFE1BC;
+    background-image: url("images_lounge/sun.png");
+    background-size: 13%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 25px;
+    padding-left: 80px;
+    border-style: dashed;
+    border-color: white;
+    border-radius: 15px;
 }
 
 #hgreentea {
@@ -22,7 +38,10 @@ h1 {
 }
 
 #pgreentea {
+    border-width: 30px;
+    border-color: #010101;
     color: #46B356;
+    background-color: #C2FECB;
 }
 
 #hbluetea {
@@ -31,6 +50,7 @@ h1 {
 
 #pbluetea {
     color: #487FB8;
+    background-color: #AED6FF;
 }
 
 #hpurpletea {
@@ -39,6 +59,7 @@ h1 {
 
 #ppurpletea {
     color: #7C48B8;
+    background-color: #D1AAFF;
 }
 
 #hredtea {
@@ -47,4 +68,5 @@ h1 {
 
 #predtea {
     color: #CF4FAB;
+    background-color: #FEABE7;
 }
