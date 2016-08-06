@@ -1,9 +1,8 @@
-section.list {
+.list {
     position: fixed;
-    font-family: "setofont";
 }
 
-div.listBG {
+.listBG {
     position: fixed;
     width: 100%;
     height: 30px;
@@ -13,12 +12,14 @@ div.listBG {
 ul li {
     float: left;
     display: block;
-    width: 150px;
+    width: 200px;
     height: 30px;
     text-align: center;
     line-height: 30px;
     letter-spacing: 7px;
-    font-size: 14pt;
+    font-family: "華康雅風體";
+    font-size: 24pt;
+    font-weight: bolder;
 }
 
 ul li a {
@@ -27,7 +28,7 @@ ul li a {
 }
 
 ul li ul li {
-    background-color: rgba(255, 177, 81, 0.6);
+    background-color: rgba(217, 177, 125, 0.6);
 }
 
 ul li ul {
@@ -50,7 +51,76 @@ ul li ul li:hover a {
     color: #9A5927;
 }
 
-article h2,
-article h4 {
-    font-family: 微軟正黑體;
+article {
+    font-family: "華康雅風體";
+    font-size: 18pt;
+}
+
+h4 {
+    font-size: 20pt;
+    font-weight: 700;
+    line-height: 70px;
+    color: rgb(154, 89, 39);
+}
+
+p {
+    line-height: 30px;
+}
+
+h2 {}
+
+#bk {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.illustration {
+    width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: rgb(154, 89, 39);
+    border-radius: 5%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.header {
+    background-color: rgb(154, 89, 39);
+    width: 300px;
+    font-size: 24pt;
+    font-weight: bolder;
+    line-height: 30px;
+    color: #F9F59A;
+}
+
+.picbox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#good {
+    float: left;
+    width: 30%;
+    text-align: center;
+    border-color: rgb(154, 89, 39);
+}
+
+#bad {
+    float: none;
+    width: 30%;
+    text-align: center;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+#feature {
+    float: right;
+    width: 30%;
+    text-align: center;
 }

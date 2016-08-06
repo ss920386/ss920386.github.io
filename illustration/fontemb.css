@@ -1,0 +1,20 @@
+/* 嵌入字型設定 */
+
+@font-face {
+    font-family: "華康雅風體";
+    src: url("雅風體W3.TTC");
+}
+
+
+/* 引用嵌入字型 */
+
+.embFont01 {
+    font-family: "華康雅風體";
+    /*font-size: 21px;*/
+}
+
+
+/*
+.NormalFont {
+    font-size: 21px;
+}*/
