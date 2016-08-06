@@ -1,6 +1,6 @@
 section.list {
     position: fixed;
-    font-family: cutefont;
+    font-family: setofont;
 }
 
 div.listBG {
@@ -50,8 +50,7 @@ ul li ul li:hover a {
     color: #9A5927;
 }
 
-h2,
-h4 {
-    font-family: cutefont;
-    font-weight: 400px;
+article h2,
+article h4 {
+    font-family: 微軟正黑體;
 }
