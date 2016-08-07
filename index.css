@@ -1,0 +1,87 @@
+body {
+    background-image: url("image/background-1462755_1920.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    background-color: #000000;
+}
+
+ul li {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: bold;
+}
+
+ul li a {
+    font-size: 12pt;
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+}
+
+ul li ul li a {
+    font-weight: normal;
+    font-size: 12pt;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+ul li ul {
+    display: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li:hover ul li {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+ul li ul li:hover {
+    background-color: #000000;
+}
+
+ul li ul li:hover a {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.title {
+    width: 99%;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+}
+
+h1 {
+    letter-spacing: 3px;
+    font-family: 'Pacifico', cursive;
+    font-size: 40pt;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18pt;
+    font-style: normal;
+    letter-spacing: 10px;
+}

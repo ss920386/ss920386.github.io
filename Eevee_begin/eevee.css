@@ -1,0 +1,96 @@
+body {
+    background-color: #daa068;
+    background-image: url("pokemon_wallpaper___eevee.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.circle1 {
+    background-image: url("PokemonIcon.png");
+    background-position: center;
+    background-size: 110px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10%;
+    left: -3%;
+    height: 130px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 80px;
+    font-family: 'Pacifico', cursive;
+    font-size: 10pt;
+}
+
+.circle1 h1 {
+    color: #C92323;
+}
+
+.circle3 {
+    /*circle background*/
+    background-color: #ffe6ac;
+    height: 440px;
+    width: 500px;
+    border-radius: 50%;
+    /*position*/
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -250px;
+    /*text*/
+    text-align: center;
+    padding-top: 60px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    line-height: 20px;
+    font-size: 16pt;
+}
+
+.circle2 {
+    background-color: #e6c594;
+    color: #734a43;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    height: 165px;
+    width: 220px;
+    border-radius: 50%;
+    padding-left: 40px;
+    padding-top: 95px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.circle3 h2 {
+    font-family: 'Pacifico', cursive;
+    color: #523120;
+}
+
+.circle4 {
+    background-color: #ffe6ac;
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    height: 127px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 23px;
+}
+
+.circle5 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 100px;
+    width: 120px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 0px;
+}
+
+
+}
