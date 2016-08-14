@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+#sr-only {
+    text.size: 50pt;
+}
+
+.jumbotron {
+    height: 720px;
+    opacity: 0.8;
+}
+
+.jumbotron h1 {
+    color: white;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+.first-row {
+    padding-top: 20px;
+}
+
+#services {
+    padding-bottom: 0px;
+}
+
+#services p {
+    padding-top: 10px;
+    color: lightgray;
+}

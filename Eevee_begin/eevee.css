@@ -33,7 +33,7 @@ body {
     height: 440px;
     width: 500px;
     border-radius: 50%;
-    /*position*/
+    /*position:left-top as center*/
     position: absolute;
     left: 45%;
     top: 50%;
