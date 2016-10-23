@@ -26,11 +26,12 @@
 	max-height:auto;
 	position:fixed;
 	top:50%;
-	margin-top:-150px;
+	left: 50%;
 	background:#fff;
 	z-index:3;
-	left:50%;
-	margin-left:-250px;
+
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
 
 .picture{

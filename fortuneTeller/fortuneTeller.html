@@ -25,6 +25,14 @@
 <script type="Text/JavaScript" src="jquery-3.1.1.min.js"></script>
 <script type='text/javascript'>
 
+jQuery.fn.center = function ()
+{
+    this.css("position","fixed");
+    this.css("top", ($(window).height() / 2) - (this.outerHeight() / 2));
+    this.css("left", ($(window).width() / 2) - (this.outerWidth() / 2));
+    return this;
+}
+
 $(document).ready(function() {
 
  	var zoomlevel=1;
@@ -38,15 +46,7 @@ $(document).ready(function() {
         });
     });
     
-    var windowWidth=$(window).width();
-    $(".content").css("width", windowWidth*0.8);
-    $(".content").css({
-        'position' : 'fixed',
-        'left' : '50%',
-        'top' : '50%',
-        'margin-left' : -$('.className').outerWidth()/2,
-        'margin-top' : -$('.className').outerHeight()/2
-    });
+   
 
     var t=$(document).scrollTop();;
     $(window).scroll(
@@ -55,6 +55,8 @@ $(document).ready(function() {
       }
     );
 
+    var windowWidth=$(window).width();
+ 	$(".content").css("width", windowWidth*0.8);
 
     $(".picture").click(function(e) {
  		
