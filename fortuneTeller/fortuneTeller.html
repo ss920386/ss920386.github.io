@@ -24,6 +24,7 @@
 </body>
 <script type="Text/JavaScript" src="jquery-3.1.1.min.js"></script>
 <script type='text/javascript'>
+
 $(document).ready(function() {
 
  	var zoomlevel=1;
@@ -39,6 +40,13 @@ $(document).ready(function() {
     
     var windowWidth=$(window).width();
     $(".content").css("width", windowWidth*0.8);
+    $(".content").css({
+        'position' : 'absolute',
+        'left' : '50%',
+        'top' : '50%',
+        'margin-left' : -$('.className').outerWidth()/2,
+        'margin-top' : -$('.className').outerHeight()/2
+    });
 
     var t=$(document).scrollTop();;
     $(window).scroll(
