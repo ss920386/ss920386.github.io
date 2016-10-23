@@ -24,7 +24,7 @@
 .content{
 	display:none;
 	max-width:500px;
-	max-height:300px;
+	max-height:auto;
 	position:fixed;
 	top:50%;
 	margin-top:-150px;
@@ -34,19 +34,18 @@
 	margin-left:-250px;
 }
 
+@media screen and(min-width:768px){
+	.content{
+		max-width:500px;
+		max-height:auto;
+	}
+}
+
 @media screen and(max-width:767px){
 	.content{
-	display:none;
-	width:300px;
-	height:180px;
-	position:fixed;
-	top:50%;
-	margin-top:-150px;
-	background:#fff;
-	z-index:3;
-	left:50%;
-	margin-left:-250px;
-}
+		width:300px;
+		height:auto;
+	}
 }
 
 .picture{
