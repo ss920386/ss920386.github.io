@@ -1,7 +1,6 @@
 <html>
 <head>
 <title>Fortune Teller</title>
-<script type="text/javascript" src="fortuneTeller.js"></script>
 <link rel="stylesheet" type="text/css" href="fortuneTeller.css">
 <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 </head>
@@ -18,8 +17,14 @@
 	<img class="content" id="alarm" src="alarm.png"></div>
 </body>
 
-<script type="Text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="Text/JavaScript" src="jquery-3.1.1.min.js"></script>
 <script type='text/javascript'>
+$(document).ready(function(){ 
+						   
+	$("p").css("border", "3px solid red");
+	
+});
+
 $(function(){
 $(".picture").click(function(e){
 var x=e.pageX;
