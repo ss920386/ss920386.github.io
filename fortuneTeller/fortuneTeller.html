@@ -38,14 +38,16 @@ $(document).ready(function() {
     });
 
     $(".picture").click(function(e) {
+ 		
+ 		var x = this.offsetX?(this.offsetX):e.pageX-this.offsetLeft;
+        var y = this.offsetY?(this.offsetY):e.pageY-this.offsetTop;
 
     	$(".circle").css({
-            'top': e.pageY+2.5,
-            'left': e.pageX-2.5
+            'top': this.offsetTop+y+2.5,
+            'left': this.offsetLeft+x-2.5
         }).fadeIn(200).fadeOut(200);
 
-        var x = this.offsetX?(this.offsetX):event.pageX-this.offsetLeft;
-        var y = this.offsetY?(this.offsetY):event.pageY-this.offsetTop;
+       
 
         if (x <= 41 && x >= 4 && y <= 267 && y >= 218) {
             $('.bg').delay(400).fadeIn(800);
