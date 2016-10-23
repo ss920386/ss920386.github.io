@@ -2,6 +2,7 @@
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fortune Teller</title>
@@ -24,11 +25,23 @@
 <script type="Text/JavaScript" src="jquery-3.1.1.min.js"></script>
 <script type='text/javascript'>
 $(document).ready(function() {
+
+ 	var zoomlevel=1;
+    $("body").dblclick(function(ev) {
+        zoomlevel = zoomlevel == 1 ? 2 : 1;
+        $(this).css({
+            "-moz-transform":"scale("+zoomlevel+")",
+            "-webkit-transform":"scale("+zoomlevel+")",
+            "-o-transform":"scale("+zoomlevel+")",
+            "-ms-transform":"scale("+zoomlevel+")"
+        });
+    });
+
     $(".picture").click(function(e) {
 
     	$(".circle").css({
-            'top': e.pageY,
-            'left': e.pageX
+            'top': e.pageY+2.5,
+            'left': e.pageX-2.5
         }).fadeIn(200).fadeOut(200);
 
         var x = this.offsetX?(this.offsetX):event.pageX-this.offsetLeft;
@@ -37,7 +50,7 @@ $(document).ready(function() {
         if (x <= 41 && x >= 4 && y <= 267 && y >= 218) {
             $('.bg').delay(400).fadeIn(800);
             $('#content1').delay(400).fadeIn(800);
-        } else if (x <= 70 && x >= 53 && y <= 99 && y >= 31) {
+        } else if (x <= 93 && x >= 57 && y <= 110 && y >= 31) {
             $('.bg').delay(400).fadeIn(800);
             $('#content2').delay(400).fadeIn(800);
         } else if (x <= 170 && x >= 139 && y <= 85 && y >= 0) {
