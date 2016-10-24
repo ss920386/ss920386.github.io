@@ -2,12 +2,12 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fortune Teller</title>
     <link rel="stylesheet" type="text/css" href="fortuneTeller.css">
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 </head>
 
 <body>
@@ -24,7 +24,6 @@
 </body>
 <script type="Text/JavaScript" src="jquery-3.1.1.min.js"></script>
 <script type='text/javascript'>
-
 jQuery.fn.center = function ()
 {
     this.css("position","fixed");
@@ -32,10 +31,8 @@ jQuery.fn.center = function ()
     this.css("left", ($(window).width() / 2) - (this.outerWidth() / 2));
     return this;
 }
-
 $(document).ready(function() {
-
- 	var zoomlevel=1;
+    var zoomlevel=1;
     $("body").dblclick(function(ev) {
         zoomlevel = zoomlevel == 1 ? 2 : 1;
         $(this).css({
@@ -47,27 +44,22 @@ $(document).ready(function() {
     });
     
    
-
     var t=$(document).scrollTop();;
     $(window).scroll(
         function() {
             t = $(window).scrollTop();
       }
     );
-
     var windowWidth=$(window).width();
- 	$(".content").css("width", windowWidth*0.8);
-
+    $(".content").css("width", windowWidth*0.8);
     $(".picture").click(function(e) {
- 		
- 		var x = this.offsetX?(this.offsetX):e.pageX-this.offsetLeft;
+        
+        var x = this.offsetX?(this.offsetX):e.pageX-this.offsetLeft;
         var y = this.offsetY?(this.offsetY):e.pageY-this.offsetTop;
-
-    	$(".circle").css({
+        $(".circle").css({
             'top': this.offsetTop+y+2.5-t,
             'left': this.offsetLeft+x-2.5
         }).fadeIn(200).fadeOut(200);
-
         if (x <= 41 && x >= 4 && y <= 267 && y >= 218) {
             $('.bg').delay(400).fadeIn(800);
             $('#content1').delay(400).fadeIn(800);
@@ -89,14 +81,11 @@ $(document).ready(function() {
         }
         
     });
-
     $('.bg').click(function() {
         $('.bg').fadeOut(800);
         $('.content').fadeOut(800);
     });
-
 });
-
 </script>
 
 </html>
