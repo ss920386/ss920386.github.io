@@ -1,0 +1,36 @@
+.myForm { 
+    font-size: 50%;
+}
+
+textarea {
+    width: 80%;
+    height: 300px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=url] {
+    width: 80%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    margin: 50px 50px;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+}
