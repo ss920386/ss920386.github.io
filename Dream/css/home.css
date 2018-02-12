@@ -1,10 +1,21 @@
+body,h1 {
+    font-family: "Montserrat", sans-serif
+}
+
+img {
+    margin-bottom: -7px
+}
+.w3-row-padding img {
+    margin-bottom: 12px
+}
+
 .myForm { 
     font-size: 50%;
 }
 
 textarea {
     width: 80%;
-    height: 300px;
+    height: 250px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -13,23 +24,13 @@ textarea {
     resize: none;
 }
 
-input[type=url] {
-    width: 80%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-}
-
-input[type=submit]{
-    background-color: #4CAF50;
+.submitBtn{
+    background-color: #ffffff;
     border: none;
     color: white;
-    padding: 16px 16px;
+    padding: 10px 10px;
     text-decoration: none;
-    margin: 50px 50px;
+    margin: 10px 10px;
     cursor: pointer;
     border: 2px solid #4CAF50;
     border-radius: 4px;
